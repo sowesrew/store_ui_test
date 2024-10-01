@@ -15,13 +15,27 @@ class MainPageLocators:
     LEFT_SLIDER = [By.XPATH, "//*[@id='carouselExampleIndicators']/a[1]"]  # левый слайдер на главной странице
     RIGHT_SLIDER = [By.XPATH, "//*[@id='carouselExampleIndicators']/a[2]"]  # правый слайдер на главной странице
 
-    CATEGORIES = [By.XPATH, "//*[@id='cat']"]  # заголовок Categories
-    PHONES = [By.XPATH, "//*[@onclick='byCat('phone')']"]  # заголовок Phones
-    LAPTOPS = [By.XPATH, "//*[@onclick='byCat('notebook')']"]  # заголовок Laptops
-    MONITORS = [By.XPATH, "//*[@onclick='byCat('monitor')']"]  # заголовок Monitors
+    IMG_1 = [By.XPATH, "//*[@id='carouselExampleIndicators']/div/div/img[@alt= 'First slide']/.."]  # Первый элемент карусели
+    IMG_2 = [By.XPATH, "//*[@id='carouselExampleIndicators']/div/div/img[@alt= 'Second slide']/.."]  # Второй элемент карусели
+    IMG_3 = [By.XPATH, "//*[@id='carouselExampleIndicators']/div/div/img[@alt= 'Third slide']/.."]  # Третий элемент карусели
+    ACTIVE = [By.XPATH, "//*[@id='carouselExampleIndicators']/div/div[contains(@class,'active')]"]  # Активный слайдер
+    ACTIVE_IMG_1 = [By.XPATH, ".//div[@class='carousel-item active']/img[@alt= 'First slide]"]
+    ACTIVE_IMG_2 = [By.XPATH, ".//div[@class='carousel-item active']/img[@alt= 'Second slide]"]
+    ACTIVE_IMG_3 = [By.XPATH, ".//div[@class='carousel-item active']/img[@alt= 'Third slide']"]
+    SLIDER_2 = [By.XPATH, "//*[@id='carouselExampleIndicators']/ol/li[2]"]
+    ACTIVE_SL = [By.CLASS_NAME, "active"]
 
-    IMG = [By.XPATH, "//*[@id='tbodyid']/div[1]/div/a/img"]  # картинка 1 элемента
-    LINK = [By.XPATH, "//*[@id='tbodyid']/div[2]/div/div/h4"]  # ссылка 2 элемента
+
+    CATEGORIES = [By.XPATH, "//*[@id='cat']"]  # заголовок Categories
+    PHONES = [By.XPATH, "//a[text() = 'Phones']"]  # заголовок Phones
+    LAPTOPS = [By.XPATH, "//a[text() = 'Laptops']"]  # заголовок Laptops
+    MONITORS = [By.XPATH, "//a[text() = 'Monitors']"]  # заголовок Monitors
+
+    TEXT_LAP = [By.XPATH, "//a[text() = 'Sony vaio i5']"]  # текст 1 элемента на странице Laptop
+    TEXT_MON = [By.XPATH, "//a[text() = 'Apple monitor 24']"]  # текст 1 элемента на страницe Monitors
+    TEXT_PH = [By.XPATH, "//a[text() = 'Samsung galaxy s6']"]  # текст 1 элемента на странице Phones
+
+    FIRST_CART = [By.XPATH, "//*[@id='tbodyid']/div[1]/div[@class = 'card h-100']"]  # первая карточка
 
     PREVIOUS = [By.XPATH, "//*[@id='prev2']"]  # кнопка "Назад"
     NEXT = [By.XPATH, "//*[@id='next2']"]  # кнопка "Вперёд"
